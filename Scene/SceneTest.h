@@ -1,6 +1,8 @@
 #pragma once
 #include "SceneBase.h"
 
+#include "Map.h"
+
 class SceneTest : public SceneBase
 {
 public:
@@ -9,7 +11,6 @@ public:
 	}
 	virtual ~SceneTest() {}
 
-
 	virtual void init() override;
 	virtual void end() override;
 
@@ -17,5 +18,5 @@ public:
 	virtual void draw() override;
 
 private:
-	
+	Map m_map;
 };
